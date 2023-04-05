@@ -1,9 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository // 컴포넌트 스캔 방식 어노테이션 타고 들어가보면 @Component
 public class MemoryMemberRepository implements MemberRepository {
 
     // save 를 할 때 키는 id 라서 Long, 값은 Member

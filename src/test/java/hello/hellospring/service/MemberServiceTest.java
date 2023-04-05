@@ -78,7 +78,7 @@ class MemberServiceTest {
 
     @Test
     void findMembers() {
-        memberRepository.clearStore(); // 지우기
+
     }
 
     @Test
