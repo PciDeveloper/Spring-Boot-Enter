@@ -1,6 +1,7 @@
 package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import hello.hellospring.service.MemberService;
@@ -32,6 +33,7 @@ public class SpringConfig {
         // 객체지향의 장점은 다형성을 활용하여 인터페이스를 두고
         // 구현체를 바꿔서 사용할 수 있음
         // 스프링은 이것을 편리하게 사용할 수 있도록 스프링 컨테이너가 지원을 해줌
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
